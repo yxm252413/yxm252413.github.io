@@ -1,0 +1,228 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>jq filter | Gridea</title>
+<link rel="shortcut icon" href="https://yxm252413.github.io/favicon.ico?v=1594192761773">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://yxm252413.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="jq filter | Gridea - Atom Feed" href="https://yxm252413.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="
+var stus=[
+{&quot;name&quot;:&quot;张三&quot;,&quot;age&quot;:12},
+{&quot;name&quot;:&quot;李四&quot;,&quot;age&quot;:10},
+..." />
+    <meta name="keywords" content="web" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://yxm252413.github.io">
+  <img class="avatar" src="https://yxm252413.github.io/images/avatar.png?v=1594192761773" alt="">
+  </a>
+  <h1 class="site-title">
+    Gridea
+  </h1>
+  <p class="site-description">
+    博主总结记录面试遇到的问题，日常技术学习总结 ，技术归类整理，常用功能实现，读书笔记等等。用笔记记录和总结自己的成长和进步，也是对费曼学习法的一个应用，把博客当作我的学生，把学习的东西记录到博客，从而加深自己的印象，知识储备，也为后期自己的复习便利。与此同时，也希望对遇到同样问题的人有所帮助。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="https://yxm252413.github.io" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/java" class="menu">
+          Java
+        </a>
+      
+    
+      
+        <a href="https://yxm252413.github.io/archives" class="menu">
+          数据库
+        </a>
+      
+    
+      
+        <a href="web" class="menu">
+          web
+        </a>
+      
+    
+      
+        <a href="https://yxm252413.github.io/tools" class="menu">
+          常用工具
+        </a>
+      
+    
+      
+        <a href="notes" class="menu">
+          读书笔记
+        </a>
+      
+    
+      
+        <a href="Interview " class="menu">
+          面试总结
+        </a>
+      
+    
+      
+        <a href="aboutme" class="menu">
+          关于我
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/yxm252413/.github.io" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              jq filter
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-07-08
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+                <a href="https://yxm252413.github.io/tag/web/" class="post-tag">
+                  # web
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p><img src="https://yxm252413.github.io/post-images/1594192519325.png" alt="" loading="lazy"><br>
+var stus=[<br>
+{&quot;name&quot;:&quot;张三&quot;,&quot;age&quot;:12},<br>
+{&quot;name&quot;:&quot;李四&quot;,&quot;age&quot;:10},<br>
+{&quot;name&quot;:&quot;大林&quot;,&quot;age&quot;:20}<br>
+];//初始化数组<br>
+var stusn=stus.filter(function(item){<br>
+return item.age!=12<br>
+});//返回符合条件的数据<br>
+输入结果如上图，filter是前端常用的过滤数据的方法，得到符合条件的数组。</p>
+<!-- more -->
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '191f81eed459222940f5',
+    clientSecret: '50df9d4562e46bf549133da45d1216749b49e0a2',
+    repo: 'comment',
+    owner: 'yxm252413',
+    admin: ['yxm252413'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://yxm252413.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

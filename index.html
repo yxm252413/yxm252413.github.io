@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Gridea</title>
-<link rel="shortcut icon" href="https://yxm252413.github.io/favicon.ico?v=1594117667338">
+<link rel="shortcut icon" href="https://yxm252413.github.io/favicon.ico?v=1594192761773">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://yxm252413.github.io/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="Gridea - Atom Feed" href="https://yxm252413.github.io/atom.xml">
@@ -18,7 +18,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://yxm252413.github.io">
-  <img class="avatar" src="https://yxm252413.github.io/images/avatar.png?v=1594117667338" alt="">
+  <img class="avatar" src="https://yxm252413.github.io/images/avatar.png?v=1594192761773" alt="">
   </a>
   <h1 class="site-title">
     Gridea
@@ -100,25 +100,35 @@
         <div class="post-container">
   
     <article class="post">
-      <a href="https://yxm252413.github.io/post/1/">
-        <h2 class="post-title">1</h2>
+      <a href="https://yxm252413.github.io/post/jq-filter/">
+        <h2 class="post-title">jq filter</h2>
       </a>
       <div class="post-info">
         <span>
-          2020-07-07
+          2020-07-08
         </span>
         <span>
           1 min read
         </span>
         
-          <a href="https://yxm252413.github.io/tag/java/" class="post-tag">
-            # java
+          <a href="https://yxm252413.github.io/tag/web/" class="post-tag">
+            # web
           </a>
         
       </div>
       
       <div class="post-abstract">
-        
+        <p><img src="https://yxm252413.github.io/post-images/1594192519325.png" alt="" loading="lazy"><br>
+var stus=[<br>
+{&quot;name&quot;:&quot;张三&quot;,&quot;age&quot;:12},<br>
+{&quot;name&quot;:&quot;李四&quot;,&quot;age&quot;:10},<br>
+{&quot;name&quot;:&quot;大林&quot;,&quot;age&quot;:20}<br>
+];//初始化数组<br>
+var stusn=stus.filter(function(item){<br>
+return item.age!=12<br>
+});//返回符合条件的数据<br>
+输入结果如上图，filter是前端常用的过滤数据的方法，得到符合条件的数组。</p>
+
       </div>
     </article>
   

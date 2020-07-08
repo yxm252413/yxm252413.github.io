@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yxm252413.github.io</id>
     <title>Gridea</title>
-    <updated>2020-07-07T10:27:49.971Z</updated>
+    <updated>2020-07-08T07:19:29.622Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yxm252413.github.io"/>
     <link rel="self" href="https://yxm252413.github.io/atom.xml"/>
@@ -11,12 +11,33 @@
     <icon>https://yxm252413.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
     <entry>
-        <title type="html"><![CDATA[1]]></title>
-        <id>https://yxm252413.github.io/post/1/</id>
-        <link href="https://yxm252413.github.io/post/1/">
+        <title type="html"><![CDATA[jq filter]]></title>
+        <id>https://yxm252413.github.io/post/jq-filter/</id>
+        <link href="https://yxm252413.github.io/post/jq-filter/">
         </link>
-        <updated>2020-07-07T10:06:26.000Z</updated>
-        <content type="html"><![CDATA[<p>https://yxm252413.github.io/archives</p>
+        <updated>2020-07-08T07:15:03.000Z</updated>
+        <summary type="html"><![CDATA[<p><img src="https://yxm252413.github.io/post-images/1594192519325.png" alt="" loading="lazy"><br>
+var stus=[<br>
+{&quot;name&quot;:&quot;张三&quot;,&quot;age&quot;:12},<br>
+{&quot;name&quot;:&quot;李四&quot;,&quot;age&quot;:10},<br>
+{&quot;name&quot;:&quot;大林&quot;,&quot;age&quot;:20}<br>
+];//初始化数组<br>
+var stusn=stus.filter(function(item){<br>
+return item.age!=12<br>
+});//返回符合条件的数据<br>
+输入结果如上图，filter是前端常用的过滤数据的方法，得到符合条件的数组。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p><img src="https://yxm252413.github.io/post-images/1594192519325.png" alt="" loading="lazy"><br>
+var stus=[<br>
+{&quot;name&quot;:&quot;张三&quot;,&quot;age&quot;:12},<br>
+{&quot;name&quot;:&quot;李四&quot;,&quot;age&quot;:10},<br>
+{&quot;name&quot;:&quot;大林&quot;,&quot;age&quot;:20}<br>
+];//初始化数组<br>
+var stusn=stus.filter(function(item){<br>
+return item.age!=12<br>
+});//返回符合条件的数据<br>
+输入结果如上图，filter是前端常用的过滤数据的方法，得到符合条件的数组。</p>
+<!-- more -->
 ]]></content>
     </entry>
 </feed>
